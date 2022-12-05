@@ -1,0 +1,96 @@
+.wrapper{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#signup{
+
+    margin: 2rem 0;
+    /* display: flex; */
+}
+
+
+#form{
+    margin: 1rem auto;
+    /* background-color: red; */
+    width: 35%;
+    padding: .5rem;
+}
+
+.form-group {
+    width: 100%;
+    /* background-color: green; */
+    margin-bottom: .8rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: .6rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--color-main-secondry);
+    resize: none;
+    color: var(--color-main);
+    font-weight: bold;
+}
+
+#submit_btn{
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    font-size: large;
+    padding: .6rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    background-color: var(--color-main);
+    color: var(--color-main-secondry);
+}
+
+#submit_btn:hover{
+    color: var(--color-main);
+    background-color: var(--color-main-secondry);
+    transition: all 400ms ease;
+}
+
+.alreadyLine{
+    display: flex;
+    justify-content: center;
+    word-spacing: 2px;
+}
+
+.already > a{
+    padding: .2rem .4rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    background-color: var(--color-main-secondry);
+    color: var(--color-bg);
+    border : 1px solid var(--color-main-secondry);
+    margin-left: .5rem;
+}
+
+.already > a:hover{
+    color: var(--color-main-secondry);
+    border : 1px solid var(--color-main-secondry);
+    background: transparent;
+    transition: all 200ms ease;
+}
+.already{
+    text-align: center;
+    color : var(--color-main-secondry)
+}
+
+/* tablet view */
+@media screen and (max-width : 1024px) {
+    #form{
+        width: 50%;
+    }  
+} 
+        
+/* mobile view */
+@media screen and (max-width : 600px) {
+    #form{
+        width: 90%;
+    }     
+}

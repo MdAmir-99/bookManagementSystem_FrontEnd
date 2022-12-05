@@ -1,0 +1,14 @@
+.footer{
+    height: 8vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--color-main-secondry);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-bg);
+    overflow: hidden;
+    font-weight: bold;
+    word-spacing: .5rem;
+}

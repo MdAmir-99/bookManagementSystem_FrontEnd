@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:ital,wght@0,200;0,300;1,200&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.hr{
+  margin: .5rem auto;
+  height: 2px;
+  width: 8%;
+  background-color: var(--color-main);
+}
+.container-fluid{
+  width: 100%;
+}
+.container {
+  width: 90%;
+}
+
+img {
+  display:  block;
+  width : 100%;
+  object-fit: cover;
+}
+
+.dark-theme{
+  --color-bg : #130f40;
+  --color-main : #e74c3c;
+  --color-main-secondry :#ecf0f1;
+}
+
+.light-theme {
+  --color-bg : #ecf0f1;
+  --color-main : #e74c3c;
+  --color-main-secondry : #130f40;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-bg);
+  line-height: 1.7;
+  background-image: url('./assets/bg-texture.png');
+}
+
+        /* tablet view */
+/* @media screen and (max-width : 1024px) {
+
+} */
+
+      /* mobile view */
+/* @media screen and (max-width : 600px) {
+  
+} */
