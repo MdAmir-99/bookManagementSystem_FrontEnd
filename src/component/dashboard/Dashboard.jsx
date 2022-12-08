@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  const [bookData, SetBookData] = useState([]);
+  let [bookData, SetBookData] = useState([]);
   const [token, SetToken] = useState("")
   const [userid, SetUserid] = useState("")
 
@@ -61,6 +61,8 @@ const Dashboard = () => {
       position: toast.POSITION.TOP_CENTER,
     });
 
+    bookData = bookData.filter(i => i._id !== id)
+    SetBookData(bookData)
   }
 
   return (
